@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import KaTeX from 'katex';
+import "katex/dist/contrib/mhchem.js";
 
 const createMathComponent = (Component, { displayMode }) => {
   class MathComponent extends React.Component {
