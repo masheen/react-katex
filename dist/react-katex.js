@@ -1,6 +1,6 @@
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('react'), require('prop-types'), require('katex')) :
-	typeof define === 'function' && define.amd ? define(['exports', 'react', 'prop-types', 'katex'], factory) :
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('react'), require('prop-types'), require('katex'), require('katex/dist/contrib/mhchem.js')) :
+	typeof define === 'function' && define.amd ? define(['exports', 'react', 'prop-types', 'katex', 'katex/dist/contrib/mhchem.js'], factory) :
 	(factory((global.ReactKaTeX = global.ReactKaTeX || {}),global.React,global.PropTypes,global.katex));
 }(this, (function (exports,React,PropTypes,KaTeX) { 'use strict';
 
